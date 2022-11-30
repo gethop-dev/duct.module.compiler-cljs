@@ -13,4 +13,3 @@ pom.xml.asc
 .eastwood
 .rebel_readline_history
 /resources/public/cljs-out/
-/.lsp
