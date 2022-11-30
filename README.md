@@ -1,12 +1,12 @@
-[![Build Status](https://github.com/gethop-dev/duct.module.compiler-cljs/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/gethop-dev/duct.module.compiler-cljs/actions/workflows/ci-cd.yml)
-[![Clojars Project](https://img.shields.io/clojars/v/dev.gethop/duct.module.compiler-cljs.svg)](https://clojars.org/dev.gethop/duct.module.compiler-cljs)
+[![Build Status](https://github.com/gethop-dev/duct.module.compiler-cljs/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/gethop-dev/duct.module.cljs-compiler/actions/workflows/ci-cd.yml)
+[![Clojars Project](https://img.shields.io/clojars/v/dev.gethop/duct.module.cljs-compiler.svg)](https://clojars.org/dev.gethop/duct.module.cljs-compiler)
 # duct.module.compiler-cljs
 
 [Duct](https://github.com/duct-framework/duct) module for configuring a ClojureScript compiler.
 
 ## Installation
 
-[![Clojars Project](https://clojars.org/dev.gethop/duct.module.compiler-cljs/latest-version.svg)](https://clojars.org/dev.gethop/duct.module.compiler-cljs)
+[![Clojars Project](https://clojars.org/dev.gethop/duct.module.cljs-compiler/latest-version.svg)](https://clojars.org/dev.gethop/duct.module.cljs-compiler)
 
 ## Usage
 
@@ -14,7 +14,7 @@ After adding the dependency add the following key to your `config.edn`
 module configuration:
 
 ``` edn
-:dev.gethop.duct.module/compiler-cljs {}
+:dev.gethop.duct.module/cljs-compiler {}
 ```
 
 The module assumes that the main entrypoint for ClojureScript
@@ -37,7 +37,7 @@ enough for a development (using `figwheel`) and a production (using
 Here is a sample configuration:
 
 ``` edn
-:dev.gethop.duct.module/compiler-cljs
+:dev.gethop.duct.module/cljs-compiler
 {:environments {:development {:compiler :figwheel-main
                               :compiler-config {:options {:main foo.client}}}
                 :production {:compiler :closure-compiler
