@@ -1,4 +1,4 @@
-(defproject dev.gethop/duct.module.cljs-compiler "0.1.0-SNAPSHOT"
+(defproject dev.gethop/duct.module.cljs-compiler "0.1.0"
   :description "Duct module to configure a ClojureScript compiler."
   :url "https://github.com/gethop-dev/duct.module.cljs-compiler"
   :license {:name "Mozilla Public Licence 2.0"
