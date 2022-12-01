@@ -17,13 +17,12 @@ module configuration:
 :dev.gethop.duct.module/cljs-compiler {}
 ```
 
-The module assumes that the main entrypoint for ClojureScript
-application which is `<project-ns>.client`. But it's configurable.
 The module accepts a `:environments` key which is a map with multiple
 environments configuration (dev, test, prod, etc.).  Each environment
 has a mandatory key `:compiler` and a optional key
 `:compiler-config`. The former is the compiler you want to use for the
-given environment, and the latter is the configuration for the compiler.
+given environment, and the latter is the configuration for the
+compiler.
 
 Currently the module supports two compilers:
 
