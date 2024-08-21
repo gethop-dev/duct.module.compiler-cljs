@@ -40,7 +40,7 @@ Here is a sample configuration:
 {:environments {:development {:compiler :figwheel-main
                               :compiler-config {:options {:main foo.client}}}
                 :production {:compiler :closure-compiler
-                             :compiler-options {:build-options {:main foo.client}}
+                             :compiler-config {:build-options {:main foo.client :infer-externs true}}
 ```
 
 Bear in mind that each `:compiler-config` is specific to the
